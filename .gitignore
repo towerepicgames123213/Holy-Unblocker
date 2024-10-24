@@ -5,7 +5,6 @@ node_modules
 .well-known
 views/archive
 ngrok.exe
-package-lock.json
 pnpm-lock.yaml
 debug.log
 /lib/rammerhead/sessions/*
@@ -14,3 +13,5 @@ debug.log
 !/lib/rammerhead/cache-js/.gitignore
 /views/dist/*
 /src/.shutdown
+lib/rammerhead/src/client/hammerhead.min.js
+lib/rammerhead/src/client/rammerhead.min.js

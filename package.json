@@ -1,9 +1,12 @@
 {
   "name": "holyunblocker",
-  "version": "6.3.7",
+  "version": "6.3.9",
   "repository": "https://github.com/QuiteAFancyEmerald/Holy-Unblocker",
   "description": "Holy Unblocker is a secure web proxy service with support for many sites.",
   "main": "backend.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "start": "npm install && npm run build && npm run manual-start",
     "restart": "node run-command.mjs stop start",
@@ -13,7 +16,8 @@
     "kill": "node run-command.mjs stop kill",
     "build": "node run-command.mjs build && cd lib/rammerhead && npm install && npm run build",
     "proxy-validator": "node proxyServiceValidator.js",
-    "workflow-test": "node run-command.mjs workflow"
+    "workflow-test": "node run-command.mjs workflow",
+    "deployment": "npm install && npm run build && node backend.js"
   },
   "keywords": [
     "proxy",
@@ -26,9 +30,9 @@
     "@fastify/helmet": "^11.1.1",
     "@fastify/static": "^7.0.4",
     "@mercuryworkshop/bare-as-module3": "^2.2.2",
-    "@mercuryworkshop/bare-mux": "^2.0.1",
-    "@mercuryworkshop/epoxy-transport": "^2.1.8",
-    "@mercuryworkshop/libcurl-transport": "^1.3.7",
+    "@mercuryworkshop/bare-mux": "^2.0.9",
+    "@mercuryworkshop/epoxy-transport": "^2.1.13",
+    "@mercuryworkshop/libcurl-transport": "^1.3.10",
     "@titaniumnetwork-dev/ultraviolet": "~3.2.7",
     "@tomphttp/bare-server-node": "^2.0.3",
     "axios": "^1.7.2",
@@ -36,7 +40,7 @@
     "mime-types": "^2.1.35",
     "pm2": "^5.4.2",
     "puppeteer": "^22.12.1",
-    "wisp-server-node": "^1.1.1",
+    "wisp-server-node": "^1.1.7",
     "ws": "^8.18.0"
   },
   "devDependencies": {

@@ -7,29 +7,27 @@
 
 Holy Unblocker LTS, an experimental web proxy service, can bypass web filters or 'blockers' regardless of whether the method of censorship is client-side or network-based. This includes the potential ability to bypass content blockers overseas, Chrome extensions, localized client firewalls, and network-related filters.
 
+## You can support Holy Unblocker by starring the repository!
+
 This project serves mostly as a proof of concept for the ideal clientless solution to bypassing censorship. Being a secure web proxy service, it supports numerous sites while being updated frequently and concentrating on detail with design, mechanics, and features.
 
 Works with a large number of sites, including YouTube, Discord, and more!
 Also has a good amount of locally hosted games featured on the site.
 
+> [!TIP]
+> Holy Unblocker LTS is optimized for self-hosting to provide you with maximum privacy control! Fork this repository and consider starring. You can self-host using either free or paid deployment options, or set it up on a dedicated instance (VPS) for enhanced performance.
 
-#### Supports
+| **Supported Sites**         | **Features**                                                                                                           |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Youtube                     | Built-in variety of open source web proxies with both a focus on speed and/or security                                 |
+| CoolMathGames               | Features "Source Randomization" to circumvent major filters effectively along with randomizations to proxy globals    |
+| Discord                     | Tab title + icon customization using the Settings Menu for improved browsing stealth                                   |
+| Now.gg                      | Adblocking support across all websites while surfing                                                                   |
+| Reddit.com                  | SOCKS5 and Onion routing support with Tor within the Settings Menu                                                    |
+| GeForce NOW                 | Game library with moderately decent titles and open-source emulation projects                                          |
+| Spotify                     | Has frequent support articles for issues relating to various proxy instances                                           |
+| And essentially all sites!  | Built for intensive production loads and speed                                                                          |
 
-- Youtube.com
-- Discord.com
-- Google.com
-- Reddit.com
-- Bing.com
-- And more sites!
-
-## You can support Holy Unblocker by starring the repository!
-
-#### Features:
-
-- Tab customization using the Options menu for improved stealth
-- Considerable variety with the open selection of proxy types
-- Game library with moderately decent titles
-- Has frequent support articles for issues relating to the various proxy instances
 
 <img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Holy-Unblocker/master/views/assets/img/preview/hu-v6.3.5-preview.png"></img>
 <img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Holy-Unblocker/master/views/assets/img/preview/hu-v6.3.0-preview-settings.png"></img>
@@ -40,22 +38,38 @@ Read below for information if the official site is blocked or for obtaining more
 
 ## Deploy Holy Unblocker
 
-<details><summary>Free Deployments</summary>
+### Free Deployments
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?name=holy-unblocker&type=git&repository=QuiteAFancyEmerald%2FHoly-Unblocker&branch=master&builder=buildpack&env%5B%5D=&ports=8080%3Bhttp%3B%2F)
+[![Deploy to Oracle Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/oraclecloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/BinBashBanana/deploy-buttons/archive/refs/heads/main.zip)
+
+<details><summary>More</summary>
 
 [![Deploy to Fly.io](https://img.shields.io/badge/Deploy%20to-Fly.io-blue?logo=fly.io)](https://fly.io/launch?repo=https://github.com/QuiteAFancyEmerald/Holy-Unblocker)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FQuiteAFancyEmerald%2FHoly-Unblocker)
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/QuiteAFancyEmerald/Holy-Unblocker-Old&branch=master&name=HolyUnblocker&run_command=npm%start)
-
 </details>
 
-#### Production Paid/Free Options
+### Production Paid/Free Options (Requires Payment Info)
 [![Deploy to Azure](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/azure.svg)](https://deploy.azure.com/?repository=https://github.com/QuiteAFancyEmerald/Holy-Unblocker)
 [![Deploy to IBM Cloud](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/ibmcloud.svg)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/QuiteAFancyEmerald/Holy-Unblocker)
 [![Deploy to Amplify Console](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/amplifyconsole.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/QuiteAFancyEmerald/Holy-Unblocker)
 [![Run on Google Cloud](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/googlecloud.svg)](https://deploy.cloud.run/?git_repo=https://github.com/QuiteAFancyEmerald/Holy-Unblocker)
-[![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/QuiteAFancyEmerald/Holy-Unblocker)
+
+#### What happened to Replit/Heroku Deployment?
+Replit is no longer free and Heroku has a set policy against web proxies. Try GitHub Codespaces or Gitpod instead for development on the cloud OR Koyeb for free hosting.
+
+### GitHub Codespaces
+
+<details><summary>Setup Instructions</summary>
+
+- Fork (and star!) this repository to your GitHub account
+- Head to the official <a href="https://github.com/codespaces">Codespaces</a> website (ensure you have a GitHub account already made)
+- Select **New Codespaces** and look for *[USERNAME]/Holy-Unblocker* on your account
+- Ensure the branch is set to `master` and the dev container configuration is set to **Holy Unblocker LTS**
+- Select **Create Codespace** and allow the container to setup
+- Type `npm install` and `npm start` in the terminal
+- Click "Make public" on the application popup, then access the deployed website via the ports tab.
+
+</details>
 
 ## Table of contents:
 
@@ -75,7 +89,7 @@ Read below for information if the official site is blocked or for obtaining more
 
 ## How to Setup
 
-Either use the button above to deploy to Heroku or do the below:
+Either use the button above to deploy to the deployment options above or type the commands below on a dedicated server:
 
 ```bash
 git clone --recurse-submodules https://github.com/titaniumnetwork-dev/Holy-Unblocker.git
@@ -92,7 +106,7 @@ npm restart
 
 #### Example v6.x instead of master
 
-The default place for the proxy when its started is `http://localhost:8080`, but you can change it if needed in `/src/config.json`.
+The default place for the proxy when its started is `http://localhost:8080`, but you can change it if needed in `./ecosystem.config.js`. You can also modify the other configuration values at `/src/config.js`  
 
 This website is hosted locally with Ultraviolet and Rammerhead built-in.
 
@@ -304,7 +318,7 @@ Preferably if you have your own device use Visual Studio Code. Pretty much the b
 Not going to go too in depth with this part but first fork this repository. The clone it locally through a Terminal of some sort depending on what OS you are on. Make sure you navigate to the folder you want to set this up in.
 
 ```
-git clone https://github.com/titaniumnetwork-dev/Holy-Unblocker.git
+git clone https://github.com/QuiteAFancyEmerald/Holy-Unblocker.git
 
 cd Holy-Unblocker
 
@@ -403,4 +417,4 @@ This project currently uses Ultraviolet, Wisp, Womginx, and Rammerhead, linked b
 
 ### Notable Mentions:
 
-- <a href="https://soyoustart.com/">SoYouStart / OVH</a> (Hosting Provider)
+- <a href="https://crunchbits.com/">Crunchbits</a> (Hosting Provider)
